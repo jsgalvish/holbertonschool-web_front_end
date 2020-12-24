@@ -1,1 +1,1 @@
-# 0x0A. Bootstrap
+# This is the root directory for a project for Holberton School

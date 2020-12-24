@@ -1,7 +1,12 @@
-const divideBy = (firstNumber) => (secondNumber) => secondNumber / firstNumber
-const addBy = (firstNumber) => (secondNumber) => firstNumber + secondNumber
+function divideBy(firstNumber, secondNumber) {
+    return secondNumber/firstNumber;
+}
 
-const addBy100 = addBy(100)
-const addBy1000 = addBy(1000)
-const divideBy10 = divideBy(10)
-const divideBy100 = divideBy(100)
+function addBy(firstNumber, secondNumber) {
+    return secondNumber+firstNumber;
+}
+
+let addBy100 = function(x){return addBy(x, 100)};
+let addBy1000 = function(x){return addBy(x, 1000)};
+let divideBy10 = function(x){return divideBy(10, x)};
+let divideBy100 = function(x){return divideBy(100, x)};
